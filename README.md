@@ -15,4 +15,4 @@ Loaded 10000 violations into ElasticSearch, so analysis is done on this total se
 
 # The distribution on different counties 
 
-![](img/county.PNG)
+![](img/County.PNG)
