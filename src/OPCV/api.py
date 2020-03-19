@@ -1,5 +1,9 @@
 import os
 from sodapy import Socrata
+from datetime import datetime
+from elasticsearch import Elasticsearch
+from requests import get
+
 
 token = os.getenv('APP_KEY')
 client = Socrata('data.cityofnewyork.us', token)
@@ -15,3 +19,14 @@ def get_data(page_size, idx=None) -> dict:
 	except Exception as e:
 		print(f"Exception occured {e}")
 		raise
+
+		
+def create_index(index_name):
+    es = Elasticsearch()
+    try:
+        es.indices.create(index=index_name)
+    except Exception:
+        pass
+
+    return es
+	
