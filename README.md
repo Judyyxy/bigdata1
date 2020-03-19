@@ -2,7 +2,7 @@
 Loaded 10000 violations randomly into ElasticSearch, so analysis is done on this total set.
 
 ## Number of violations on time line. 
-(Most violations happend on 12/31 and it's possible to caused by that I only load 10k records and the 10k records mainly from this date by accident. There can have other reasons behind it and it need to a further look. )
+( Most violations happend on 12/31 and the possible reason for it is that I only load 10k records and the 10k records mainly from this date by accident. There can have other reasons behind it and it needs to an investigation. -> load all the data )
 
 ![](img/hit_ts.PNG)
 
